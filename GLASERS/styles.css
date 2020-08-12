@@ -1,0 +1,223 @@
+/* Capstone Project 
+	Glasers Bakery
+	ryan 08/05/2020 */
+
+html{
+	background-image: url(images/black_and_white_back.jpg);
+}
+
+body{
+	background-color: rgb(10,10,10);
+	height: 100%;   
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1200px;   
+    width: 100%;
+
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Lobster', cursive;
+}
+
+h2{
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Acme', sans-serif;
+
+}
+
+#store{
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	margin-left: 350px;
+	margin-right: 350px
+}
+
+
+
+p#bakery{
+	color: white;
+	font-size: 20px;
+	margin-right: 200px;
+	margin-left: 200px;
+	font-family: 'Sarabun', sans-serif;
+
+}
+
+#bakers{
+	max-width: 100%;
+	max-height: auto;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+ #click{
+ 	color: white;
+	font-size: 20px;
+	margin-right: 153px;
+	margin-left: 153px;
+	font-family: 'Sarabun', sans-serif;
+ }
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	float: left;
+}
+
+nav li a{
+	display: block;
+	color: white;
+	font-family: "Rubik", sans-serif;
+	padding-top: 82px;
+	padding-left: 30px;
+	font-size: 20px;
+}
+
+header{
+	display: inline-block;
+	float: left;
+}
+
+#about{
+	color: white;
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Lobster', cursive;
+	margin-right: 250px;
+	margin-left: 250px;
+	padding-top: 100px;
+}
+footer{
+	background-color: rgb(80,80,80);
+	clear: both;
+	width: 100%;
+}
+
+footer section{
+	color: white;
+	font-family: "Rubik", sans-serif;
+	float: left;
+	padding: 5px 30px;
+	width: 15%
+}
+
+footer nav ul{
+	float: right;
+	padding: 10px 30px;
+	width: 20%;
+	font-family: "Rubik", sans-serif;
+}
+
+footer::after{
+	display: table;
+	content: "";
+	clear: both;
+}
+footer a{
+	color: white;
+}
+
+footer nav ul a:hover {
+   text-decoration: underline;
+}
+
+h1#contact{
+	padding-top: 40px;
+}
+
+div#case{
+	height: auto;
+	width: 100%;
+	margin-right: 400px;
+	margin-left: 400px;
+}
+
+.info{
+	color: white;
+	font-size: 20px;
+	margin-right: 200px;
+	margin-left: 200px;
+	font-family: 'Sarabun', sans-serif;
+}
+
+.info a{
+	text-decoration: none;
+	color: white;
+	margin-left: 5px;
+}
+div#map{
+	margin-right: 400px;
+	margin-left: 400px;
+}
+
+address{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+
+.info a:hover{
+	color: red;
+}
+
+p#mobile{
+	display: none;
+}
+
+/*------tablet styles-------*/
+@media only screen and (max-width: 940px){
+	#store{
+		background-image: url(images/glasers_resize_mobile.png);
+		margin-left: 150px;
+		margin-right: 150px;
+		display: block;
+	}
+	#bakers{
+		display: block;
+		margin-right: 150px;
+		margin-left: 150px;
+	}
+	#bakery{
+		text-align: center; 
+	}
+	#case{
+		display: block;
+		margin-right: 150px;
+		margin-left: 150px;
+	}
+	#map{
+		display: block;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
+}
+
+/*---------moblie styles-------*/
+@media only screen and (max-width: 550px){
+	#store{
+		display: none;
+	}
+	#click{
+		display: none;
+	}
+	p#mobile{
+		display: block;
+		color: white;
+	}
+	#bakers{
+		display: none;
+	}
+	#about{
+		padding-top: 170px;
+		margin-right: 1000px;
+		display: block;
+	}

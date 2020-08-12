@@ -1,0 +1,211 @@
+<!--Capstone Project
+	Order Page
+	Glasers Bake Shop
+	Ry 08/06/2020 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Order</title>
+	<!--google fonts here-->
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Rubik&family=Sarabun:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<!--style sheets here-->
+	<link rel="stylesheet" type="text/css" href="clean_slate.css"/>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="order_form.css">\
+
+ 	<!--java script here-->
+ 	<script src="order.js" async></script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="images/alt_logo.png" alt="alt logo"></a>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>&nbsp;&nbsp;
+			<li><a href="about_us.html">About Us</a></li>&nbsp;&nbsp;
+			<li><a href="order.html">Order</a></li>&nbsp;&nbsp;
+			<li><a href="contact.html">Contact Us</a></li>
+
+		</ul>
+	</nav>
+	<h1>ORDER ONLINE</h1>
+	<p>Here is where you can order a few types of Cookies, Pastries, and Breads</p><br><br>
+	<p>Here is what we have available at the moment!</p>
+	<div id="blackandwhite">
+		<img src="images/black_and_white_resize.png" alt="black and white cookie">
+		<h4>Black and White Cookie</h4><br>
+		<p class="cost">$ 3.50</p>
+		<label for="qty" class="drop">Quantity</label>
+		<select name="qty" id="qty">
+			<option>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<br>
+	<div id="c_danish">
+		<img src="images/cheese_danish.png" alt="cheese dansish">
+		<h4>Cheese Danish</h4><br>
+		<p class="cost">$4.00</p>
+		<label for="qty" class="drop">Quantity</label>
+		<select name="qty" id="qty">
+			<option>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<br>
+	<div id="p_danish">
+		<img src="images/prune_danish.png" alt="prune danish">
+		<h4>Prune Danish</h4><br>
+		<p class="cost">$4.00</p>
+		<label for="qty" class="drop">Quantity</label>
+		<select name="qty" id="qty">
+			<option>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<br>
+	<div id="challah">
+		<img src="images/challah.png" alt="challah bread"/>
+		<h4>Challah Bread</h4><br>
+		<p class="cost">$10.00</p>
+		<label for="qty" class="drop">Quantity</label>
+		<select name="qty" id="qty">
+			<option>0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	 <p><strong>*CHOCOLATE LAYER CAKE IS NOT AVAILABLE ONLINE, MUST BE WALK IN!*</strong></p>
+	 <p><strong> ALL FIELDS ARE MANDITORY</strong></p>
+	 <!--start of form/left side of form-->
+	<form id="order">
+	 <fieldset>
+		 <div class="formrow">
+		 	<label for="name">Name:</label>
+		 	<input type="text" name="name" id="name" autofocus placeholder="First and Last Name" required></input>
+		 </div>
+		 <br>
+
+		 <div class="formrow">
+		 	<label for="street">Street:</label>
+		 	<input type="text" name="street" id="street"></input>
+		 </div>
+		 <br>
+
+		 <div class="formrow">
+		 	<label for="city">City:</label>
+		 	<input type="text" name="city" id="city"></input>
+		 </div>
+		 <br>
+
+		 <div class="formrow">
+		 	<label for="state">State:</label>
+		 	<input type="text" name="state" id="state" value="NY"></input>
+		 </div>
+		 <br>
+
+		 <div class="formrow">
+		 	<label for="zip">Zip:</label>
+		 	<input type="text" name="zip" id="zip" placeholder="10123" required></input>
+		 </div>
+		 <br>
+
+		 <div class="formrow">
+		 	<label for="phone">Phone Number:</label>
+		 	<input type="tel" name="phone" id="phone" placeholder="212-342-1232"></input>
+		 </div>
+	</fieldset>
+	 <!--left side of the form-->
+	 <fieldset>
+		 <div class="formrow">
+		 	<label for="ccnumber">Credit Card Number:</label>
+		 	<input type="text" name="ccnumber" id="ccnumber" required></input>
+		 </div>
+		 <br>
+
+		 <div class="formrow">
+		 	<label for="date">Exp Date:</label>
+		 	<select name="month" id="month" required>
+		 		<option value="1">1</option>
+		 		<option value="2">2</option>
+		 		<option value="3">3</option>
+		 		<option value="4">4</option>
+		 		<option value="5">5</option>
+		 		<option value="6">6</option>
+		 		<option value="7">7</option>
+		 		<option value="8">8</option>
+		 		<option value="9">9</option>
+		 		<option value="10">10</option>
+		 		<option value="11">11</option>
+		 		<option value="12">12</option>
+		 	</select>
+		 	<select name="year" id="year" required>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+				<option value="2024">2024</option>	 		
+		 	</select>
+		 	<br>
+
+		 	<div class="formrow">
+		 		<label for="cvv">CVV/CCV:</label>
+		 		<input type="text" name="cvv" id="cvv" required>
+		 	</div>
+		 </fieldset>
+	<input type="submit" name="submit" id="subbut" value="Submit Order">
+	<input type="button" name="cancel" id="canbut" value="Cancel">
+	</form>
+	 </div>
+	 <footer>
+		<section>
+		Glaser's Bake Shop<br>
+		1670 1st Avenue<br>
+		New York NY 10123<br>
+		</section>
+		<nav>
+			<ul id="social">
+				<a href="#"><img src="images/fbicon.png" alt="facebook"></a>
+				<a href="#"><img src="images/twittericon.png" alt="twitter"></a>
+				<a href="#"><img src="images/insta.png" alt="instagram"></a>
+			</ul>
+
+			<ul id="dummy">
+				<a href="#">Careers</a><br>
+				<a href="#">Press</a><br>
+				<a href="#">Location</a><br>
+				<a href="#">Donate</a><br>
+			</ul>
+
+			<ul id="links">
+				<a href="index.html">Home</a><br>
+				<a href="about_us.html">About Us</a><br>
+				<a href="order.html">Order</a><br>
+				<a href="contact.html">Contact</a><br>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

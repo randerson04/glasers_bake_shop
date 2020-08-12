@@ -1,0 +1,84 @@
+form{
+	color: white;
+}
+p{
+	color: white;
+	font-family: "Sarabun", sans-serif;
+	text-align: center;
+	font-size: 35px;
+	padding-top: 20px;
+	clear: both;
+}
+h1{
+	padding-top: 100px;
+
+}
+
+footer{
+	width: 100%;
+}
+
+.cost{
+	font-size: 18px;
+	text-align: left;
+}
+
+h4{
+	color: white;
+	font-family: 'Heebo', sans-serif;
+}
+
+.drop{
+	color: white;
+}
+
+div#blackandwhite{
+	float: left;
+	width: 20%;
+	padding: 5px 30px;
+}
+
+div#c_danish{
+	float: left;
+	width: 20%;
+	padding: 5px 30px;
+}
+
+div#p_danish{
+	float: left;
+	width: 20%;
+	padding: 5px 30px;
+}
+
+div#challah{
+	float: left;
+	width: 20%;
+	padding: 5px 30px;
+}
+.formrow{
+	color: white;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	font-family: 'Heebo', sans-serif;
+
+}
+
+form#order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow:row wrap;
+	flex-flow: row wrap;
+}
+
+form#order > fieldset{
+	-webkit-flex: 1 1 300px;
+	flex: 1 1 300px;
+}
+
+div.button{
+	text-align: center;
+	margin-left: 250px;
+	margin-right: 250px;
+}
